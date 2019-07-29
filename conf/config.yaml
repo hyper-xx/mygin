@@ -1,5 +1,5 @@
 runmode: debug
-addr: :6663
+addr: :6664
 name: mygin
-url: http://127.0.0.1:6663
+url: http://127.0.0.1:6664
 max_ping_count: 10

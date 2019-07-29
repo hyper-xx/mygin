@@ -35,6 +35,7 @@ func (c *Config) initConfig() error {
 	}
 	viper.SetConfigType("yaml")
 	viper.AutomaticEnv()
+	//设置系统环境变量前缀 ex:export APISERVER_ADDR=:7777
 	viper.SetEnvPrefix("APISERVER")
 	replacer := strings.NewReplacer(".", "_")
 	viper.SetEnvKeyReplacer(replacer)
