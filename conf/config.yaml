@@ -3,3 +3,13 @@ addr: :6664
 name: mygin
 url: http://127.0.0.1:6664
 max_ping_count: 10
+
+log:
+  writers: file,stdout
+  logger_level: DEBUG
+  logger_file: logs/mygin.log
+  log_format_text: false
+  rollingPolicy: size # size, daily
+  log_rotate_date: 1
+  log_rotate_size: 1024
+  log_backup_count: 7

@@ -1,0 +1,2 @@
+{"level":"INFO","timestamp":"2019-07-30 23:25:47.405","file":"mygin/main.go:44","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-07-30 23:25:47.407","file":"mygin/main.go:41","msg":"The router has been deployed successfully."}
