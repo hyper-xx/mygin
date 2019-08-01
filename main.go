@@ -10,6 +10,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/hyper-xx/mygin/config"
+	"github.com/hyper-xx/mygin/model"
 	"github.com/hyper-xx/mygin/router"
 	"github.com/lexkong/log"
 	"github.com/spf13/pflag"
@@ -21,12 +22,18 @@ var (
 
 func main() {
 	pflag.Parse()
+	//Init config
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
 	}
 
+	//Init DB
+	model.DB.Init()
+
+	//Set gin runmode
 	gin.SetMode(viper.GetString("runmode"))
 
+	//Create gin engine
 	r := gin.New()
 
 	middlewares := []gin.HandlerFunc{}
