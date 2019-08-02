@@ -8,6 +8,7 @@ import (
 	"github.com/lexkong/log"
 
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 type Database struct {

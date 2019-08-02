@@ -1,2 +1,10 @@
 {"level":"INFO","timestamp":"2019-07-30 23:25:47.405","file":"mygin/main.go:44","msg":"Start to listening the incoming requests on http address: :6664"}
 {"level":"INFO","timestamp":"2019-07-30 23:25:47.407","file":"mygin/main.go:41","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2019-08-02 10:57:04.884","file":"model/init.go:24","msg":"Database connection failed. Database name: ","data":{"error":"sql: unknown driver \"mysql\" (forgotten import?)"}}
+{"level":"ERROR","timestamp":"2019-08-02 10:58:02.736","file":"model/init.go:24","msg":"Database connection failed. Database name: ","data":{"error":"sql: unknown driver \"mysql\" (forgotten import?)"}}
+{"level":"ERROR","timestamp":"2019-08-02 11:00:25.733","file":"model/init.go:24","msg":"Database connection failed. Database name: ","data":{"error":"sql: unknown driver \"mysql\" (forgotten import?)"}}
+{"level":"INFO","timestamp":"2019-08-02 11:04:09.715","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-02 11:04:09.716","file":"mygin/main.go:61","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-02 11:04:10.720","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"DEBUG","timestamp":"2019-08-02 11:06:37.961","file":"user/create.go:25","msg":"username is :[admin],password is []"}
+{"level":"DEBUG","timestamp":"2019-08-02 11:06:55.534","file":"user/create.go:25","msg":"username is :[admin],password is [123]"}

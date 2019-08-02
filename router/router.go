@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/hyper-xx/mygin/handler/monitor"
+	"github.com/hyper-xx/mygin/handler/user"
 	"github.com/hyper-xx/mygin/router/middleware"
 
 	"github.com/gin-gonic/gin"
@@ -21,6 +22,11 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	g.NoRoute(func(c *gin.Context) {
 		c.String(http.StatusNotFound, "The incorrect API route.")
 	})
+
+	u := g.Group("/v1/user")
+	{
+		u.POST("", user.Create)
+	}
 
 	//the health check handlers
 	svcd := g.Group("/monitor")
