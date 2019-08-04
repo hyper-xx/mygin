@@ -32,7 +32,7 @@ func openDB(username, password, addr, name string) *gorm.DB {
 
 func setupDB(db *gorm.DB) {
 	db.LogMode(viper.GetBool("gormlog"))
-	db.DB().SetMaxOpenConns(200)
+	//db.DB().SetMaxOpenConns(200)
 	db.DB().SetMaxIdleConns(0)
 }
 
@@ -62,4 +62,9 @@ func (db *Database) Init() {
 		Self:   GetSelfDB(),
 		Docker: GetDockerDB(),
 	}
+}
+
+func (db *Database) Close() {
+	DB.Self.Close()
+	DB.Docker.Close()
 }

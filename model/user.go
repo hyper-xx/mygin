@@ -18,6 +18,10 @@ func (c *UserModel) TableName() string {
 	return "tb_users"
 }
 
+// func (c *UserInfo) TableName() string {
+// 	return "tb_users"
+// }
+
 //Create a new user account
 func (u *UserModel) Create() error {
 	return DB.Self.Create(&u).Error
@@ -38,7 +42,7 @@ func (u *UserModel) Update() error {
 //GetUser get an user info
 func GetUser(username string) (*UserModel, error) {
 	u := &UserModel{}
-	d := DB.Self.Where("username=?", username).First(&u)
+	d := DB.Self.Where("username = ?", username).First(&u)
 	return u, d.Error
 }
 
@@ -50,7 +54,7 @@ func ListUser(username string, offset, limit int) ([]*UserModel, uint64, error) 
 	users := make([]*UserModel, 0)
 	var count uint64
 
-	where := fmt.Sprintf("username like '%%s%%'", username)
+	where := fmt.Sprintf("username like '%%%s%%'", username)
 	if err := DB.Self.Model(&UserModel{}).Where(where).Count(&count).Error; err != nil {
 		return users, count, err
 	}
