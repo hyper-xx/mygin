@@ -8,3 +8,41 @@
 {"level":"INFO","timestamp":"2019-08-02 11:04:10.720","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
 {"level":"DEBUG","timestamp":"2019-08-02 11:06:37.961","file":"user/create.go:25","msg":"username is :[admin],password is []"}
 {"level":"DEBUG","timestamp":"2019-08-02 11:06:55.534","file":"user/create.go:25","msg":"username is :[admin],password is [123]"}
+{"level":"INFO","timestamp":"2019-08-02 15:34:18.285","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-02 15:34:18.388","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-02 15:35:23.119","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-02 15:35:23.120","file":"mygin/main.go:61","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-02 15:35:24.122","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-02 15:36:03.359","file":"user/create.go:27","msg":"URL username:admin2"}
+{"level":"INFO","timestamp":"2019-08-02 15:36:03.359","file":"user/create.go:30","msg":"URL key param desc:test"}
+{"level":"INFO","timestamp":"2019-08-02 15:36:03.359","file":"user/create.go:33","msg":"Header Content-Type:application/json"}
+{"level":"DEBUG","timestamp":"2019-08-02 15:36:03.359","file":"user/create.go:35","msg":"username is :[admin],password is [admin]"}
+{"level":"INFO","timestamp":"2019-08-04 12:08:56.103","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 12:08:56.104","file":"mygin/main.go:61","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-04 12:08:57.105","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 12:17:38.822","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 12:17:38.824","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 12:17:42.606","file":"user/create.go:15","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 12:20:26.541","file":"config/config.go:68","msg":"Config file changed: /Users/xuzhengxi/Goprojects/src/github.com/hyper-xx/mygin/conf/config.yaml"}
+{"level":"INFO","timestamp":"2019-08-04 12:20:28.871","file":"config/config.go:68","msg":"Config file changed: /Users/xuzhengxi/Goprojects/src/github.com/hyper-xx/mygin/conf/config.yaml"}
+{"level":"INFO","timestamp":"2019-08-04 12:20:39.694","file":"config/config.go:68","msg":"Config file changed: /Users/xuzhengxi/Goprojects/src/github.com/hyper-xx/mygin/conf/config.yaml"}
+{"level":"INFO","timestamp":"2019-08-04 12:20:48.030","file":"config/config.go:68","msg":"Config file changed: /Users/xuzhengxi/Goprojects/src/github.com/hyper-xx/mygin/conf/config.yaml"}
+{"level":"INFO","timestamp":"2019-08-04 12:20:58.667","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 12:20:58.668","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 12:21:01.463","file":"user/create.go:15","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 12:21:10.960","file":"user/create.go:15","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 12:25:36.783","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 12:25:36.787","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 12:25:38.690","file":"user/create.go:18","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 12:26:13.280","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 12:26:13.281","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 12:26:16.193","file":"user/create.go:18","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 12:41:53.571","file":"user/create.go:18","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 12:45:33.666","file":"user/create.go:18","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 13:18:20.604","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 13:18:20.605","file":"mygin/main.go:61","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-04 13:18:21.612","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 13:18:23.989","file":"user/create.go:17","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-04 13:27:26.683","file":"mygin/main.go:51","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-04 13:27:26.684","file":"mygin/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-04 13:27:28.940","file":"user/create.go:17","msg":"User Create function called.","data":{"X-Request-Id":""}}

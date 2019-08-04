@@ -1,41 +1,52 @@
 package user
 
 import (
-	"fmt"
-	"net/http"
-
 	"github.com/gin-gonic/gin"
+	. "github.com/hyper-xx/mygin/handler"
+	"github.com/hyper-xx/mygin/model"
 	"github.com/hyper-xx/mygin/pkg/errnum"
+	"github.com/hyper-xx/mygin/util"
 	"github.com/lexkong/log"
+	"github.com/lexkong/log/lager"
 )
 
 //Create a nuew user
 func Create(c *gin.Context) {
-	var r struct {
-		Username string `json:"username"`
-		Password string `json:"password"`
-	}
-
-	var err error
+	log.Info("User Create function called.", lager.Data{"X-Request-Id": util.GetReqID(c)})
+	var r CreateRequest
 	if err := c.Bind(&r); err != nil {
-		c.JSON(http.StatusOK, gin.H{"error": errnum.ErrBind})
+		SendResponse(c, errnum.ErrBind, nil)
 		return
 	}
 
-	log.Debugf("username is :[%s],password is [%s]", r.Username, r.Password)
-	if r.Username == "" {
-		err = errnum.New(errnum.ErrUserNotFound, fmt.Errorf("username can not found in db: xx.xx.xx.xx")).Add("This is add message.")
-		log.Errorf(err, "Get an error")
+	u := model.UserModel{
+		Username: r.Username,
+		Password: r.Password,
 	}
 
-	if errnum.IsErrUserNotFound(err) {
-		log.Debug("err type is ErrUserNotFound")
+	//Validate the date
+	if err := u.Validate(); err != nil {
+		SendResponse(c, errnum.ErrValidation, nil)
+		return
 	}
 
-	if r.Password == "" {
-		err = fmt.Errorf("password is empty")
+	//Encrypt the user password
+	if err := u.Encrypt(); err != nil {
+		SendResponse(c, errnum.ErrEncrypt, nil)
+		return
 	}
 
-	code, message := errnum.DecodeErr(err)
-	c.JSON(http.StatusOK, gin.H{"code": code, "message": message})
+	//Insert the user to the database
+	if err := u.Create(); err != nil {
+		//fmt.Printf(err.Error())
+		SendResponse(c, errnum.ErrDatabase, nil)
+		return
+	}
+
+	rsp := CreateResponse{
+		Username: r.Username,
+	}
+
+	//Show the user info
+	SendResponse(c, nil, rsp)
 }
