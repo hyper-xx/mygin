@@ -12,6 +12,7 @@ import (
 	"github.com/hyper-xx/mygin/config"
 	"github.com/hyper-xx/mygin/model"
 	"github.com/hyper-xx/mygin/router"
+	"github.com/hyper-xx/mygin/router/middleware"
 	"github.com/lexkong/log"
 	"github.com/spf13/pflag"
 )
@@ -37,9 +38,14 @@ func main() {
 	//Create gin engine
 	r := gin.New()
 
-	middlewares := []gin.HandlerFunc{}
+	//middlewares := []gin.HandlerFunc{}
 
-	router.Load(r, middlewares...)
+	router.Load(
+		r,
+		//middlewares...
+		middleware.RequestId(),
+		middleware.Logging(),
+	)
 
 	//ping the server to make sure the router is working.
 	go func() {

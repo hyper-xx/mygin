@@ -8,7 +8,7 @@ The gin for api server basic framework
 - [x] 自定义错误 Code
 - [x] 读取和返回 HTTP 请求
 - [x] 业务逻辑开发
-- [ ] 对请求插入自己的处理逻辑
+- [x] 对请求插入自己的处理逻辑
 - [ ] 进行 API 身份验证
 - [ ] 进行 HTTPS 加密
 - [ ] 用 Makefile 管理 API 源码

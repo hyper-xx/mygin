@@ -19,3 +19,15 @@
 {"level":"INFO","timestamp":"2019-08-04 20:22:54.010","file":"mygin/main.go:52","msg":"Start to listening the incoming requests on http address: :6664"}
 {"level":"INFO","timestamp":"2019-08-04 20:22:54.011","file":"mygin/main.go:49","msg":"The router has been deployed successfully."}
 {"level":"INFO","timestamp":"2019-08-04 20:24:18.590","file":"user/update.go:16","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2019-08-05 15:36:20.179","file":"mygin/main.go:58","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-05 15:36:20.180","file":"mygin/main.go:68","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-05 15:36:21.185","file":"mygin/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-05 15:37:35.821","file":"middleware/logging.go:83","msg":"19.245ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-08-05 15:40:30.761","file":"mygin/main.go:58","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-05 15:40:30.762","file":"mygin/main.go:68","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-05 15:40:31.770","file":"mygin/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-05 15:40:32.996","file":"middleware/logging.go:83","msg":"4.019ms      |127.0.0.1   |GET /v1/user|{code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-08-05 15:41:10.799","file":"mygin/main.go:58","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-05 15:41:10.800","file":"mygin/main.go:68","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-05 15:41:11.807","file":"mygin/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-05 15:41:14.291","file":"middleware/logging.go:83","msg":"3.903ms       | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}"}
