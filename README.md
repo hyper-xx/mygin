@@ -9,7 +9,7 @@ The gin for api server basic framework
 - [x] 读取和返回 HTTP 请求
 - [x] 业务逻辑开发
 - [x] 对请求插入自己的处理逻辑
-- [ ] 进行 API 身份验证
+- [x] 进行 API 身份验证
 - [ ] 进行 HTTPS 加密
 - [ ] 用 Makefile 管理 API 源码
 - [ ] 给 API 命令添加版本功能
