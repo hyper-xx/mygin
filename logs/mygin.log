@@ -31,3 +31,13 @@
 {"level":"INFO","timestamp":"2019-08-05 15:41:10.800","file":"mygin/main.go:68","msg":"Waiting for the router, retry in 1 second."}
 {"level":"INFO","timestamp":"2019-08-05 15:41:11.807","file":"mygin/main.go:55","msg":"The router has been deployed successfully."}
 {"level":"INFO","timestamp":"2019-08-05 15:41:14.291","file":"middleware/logging.go:83","msg":"3.903ms       | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-08-07 17:33:50.108","file":"mygin/main.go:58","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-07 17:33:50.110","file":"mygin/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-07 17:35:23.130","file":"middleware/logging.go:83","msg":"100.952ms     | 127.0.0.1    | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-08-07 17:36:19.100","file":"middleware/logging.go:83","msg":"254µs         | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2019-08-07 17:36:56.357","file":"middleware/logging.go:83","msg":"152µs         | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2019-08-07 17:37:47.176","file":"user/create.go:15","msg":"User Create function called.","data":{"X-Request-Id":"5a6e675b-e9e2-45d4-a585-6065adf0d5c4"}}
+{"level":"INFO","timestamp":"2019-08-07 17:37:47.262","file":"middleware/logging.go:83","msg":"86.926ms      | 127.0.0.1    | POST /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-08-07 17:38:01.595","file":"middleware/logging.go:83","msg":"179µs         | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2019-08-07 17:38:06.044","file":"middleware/logging.go:83","msg":"274µs         | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2019-08-07 17:38:24.237","file":"middleware/logging.go:83","msg":"7.784ms       | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}"}

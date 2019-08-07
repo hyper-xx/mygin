@@ -24,6 +24,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	})
 
 	u := g.Group("/v1/user")
+	u.Use(middleware.AuthMiddleware())
 	{
 		u.POST("", user.Create)
 		u.DELETE("/:id", user.Delete)
@@ -40,6 +41,9 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		svcd.GET("cpu", monitor.CPUCheck)
 		svcd.GET("ram", monitor.RAMCheck)
 	}
+
+	//login api for token auth
+	g.POST("/login", user.Login)
 
 	return g
 }
