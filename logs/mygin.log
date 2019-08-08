@@ -41,3 +41,8 @@
 {"level":"INFO","timestamp":"2019-08-07 17:38:01.595","file":"middleware/logging.go:83","msg":"179µs         | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}"}
 {"level":"INFO","timestamp":"2019-08-07 17:38:06.044","file":"middleware/logging.go:83","msg":"274µs         | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}"}
 {"level":"INFO","timestamp":"2019-08-07 17:38:24.237","file":"middleware/logging.go:83","msg":"7.784ms       | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-08-08 14:59:08.721","file":"mygin/main.go:67","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-08 14:59:08.721","file":"mygin/main.go:63","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-08 14:59:08.721","file":"mygin/main.go:77","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-08 14:59:09.728","file":"mygin/main.go:55","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-08 15:00:15.802","file":"middleware/logging.go:83","msg":"22.369ms      | 127.0.0.1    | GET /v1/user | {code: 0, message: OK}"}

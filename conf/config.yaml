@@ -4,6 +4,10 @@ name: mygin
 url: http://127.0.0.1:6664
 max_ping_count: 10
 jwt_secret: Rtg8BPKNEf2mB4mgvKONGPZZQSaJWNLijxR42qRgq0iBb5
+tls:
+  addr: :6665
+  cert: conf/server.crt
+  key: conf/server.key
 log:
   writers: file,stdout
   logger_level: DEBUG
