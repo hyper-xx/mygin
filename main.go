@@ -1,11 +1,15 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
+	"os"
 
 	"net/http"
 	"time"
 
+	v "github.com/hyper-xx/mygin/pkg/version"
 	"github.com/spf13/viper"
 
 	"github.com/gin-gonic/gin"
@@ -18,11 +22,23 @@ import (
 )
 
 var (
-	cfg = pflag.StringP("config", "c", "", "apiserver config file path.")
+	cfg     = pflag.StringP("config", "c", "", "apiserver config file path.")
+	version = pflag.BoolP("version", "v", false, "show verison info.")
 )
 
 func main() {
 	pflag.Parse()
+	//shell verion -v
+	if *version {
+		v := v.Get()
+		marshalled, err := json.MarshalIndent(&v, "", " ")
+		if err != nil {
+			fmt.Printf("%v\n", err)
+			os.Exit(1)
+		}
+		fmt.Println(string(marshalled))
+		return
+	}
 	//Init config
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
