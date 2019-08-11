@@ -61,3 +61,45 @@
 {"level":"INFO","timestamp":"2019-08-08 15:29:08.236","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
 {"level":"INFO","timestamp":"2019-08-08 15:29:08.236","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
 {"level":"INFO","timestamp":"2019-08-08 15:29:08.236","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-08 16:07:35.958","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-08 16:07:35.958","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-08 16:07:35.962","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 21:15:39.452","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 21:15:39.453","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 21:15:39.458","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 21:15:52.210","file":"middleware/logging.go:83","msg":"131µs         | 127.0.0.1    | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2019-08-11 21:49:34.249","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 21:49:34.249","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 21:49:34.249","file":"mygin/main.go:84","msg":"listen tcp :6664: bind: address already in use"}
+{"level":"INFO","timestamp":"2019-08-11 21:49:34.249","file":"mygin/main.go:80","msg":"listen tcp :6665: bind: address already in use"}
+{"level":"INFO","timestamp":"2019-08-11 21:50:02.450","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 21:50:02.450","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 21:50:02.451","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 21:50:03.457","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 21:54:14.669","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 21:54:14.669","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 21:54:14.670","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 21:54:15.674","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 21:59:22.806","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 21:59:22.806","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 21:59:22.807","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 21:59:23.812","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 22:05:52.222","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 22:05:52.222","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 22:05:52.222","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 22:05:53.227","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 22:17:57.046","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 22:17:57.046","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 22:17:57.046","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 22:17:58.060","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 22:20:42.959","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 22:20:42.959","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 22:20:42.960","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 22:35:53.825","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 22:35:53.826","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 22:35:53.826","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 22:35:54.833","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2019-08-11 23:18:50.385","file":"mygin/main.go:79","msg":"Start to listening the incoming requests on https address: :6665"}
+{"level":"INFO","timestamp":"2019-08-11 23:18:50.385","file":"mygin/main.go:83","msg":"Start to listening the incoming requests on http address: :6664"}
+{"level":"INFO","timestamp":"2019-08-11 23:18:50.385","file":"mygin/main.go:93","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-08-11 23:18:51.389","file":"mygin/main.go:71","msg":"The router has been deployed successfully."}

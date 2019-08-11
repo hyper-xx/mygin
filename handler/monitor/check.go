@@ -18,13 +18,25 @@ const (
 	GB = 1024 * MB
 )
 
-//HealthCheck show 'ok' as the ping-pong.
+// @Summary Shows OK as the ping-pong result
+// @Description Shows OK as the ping-pong result
+// @Tags monitor
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "OK"
+// @Router /monitor/health [get]
 func HealthCheck(c *gin.Context) {
 	message := "OK"
 	c.String(http.StatusOK, message)
 }
 
-//DiskCheck checks the disk usage.
+// @Summary Checks the disk usage
+// @Description Checks the disk usage
+// @Tags monitor
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "OK - Free space: 17233MB (16GB) / 51200MB (50GB) | Used: 33%"
+// @Router /monitor/disk [get]
 func DiskCheck(c *gin.Context) {
 	u, _ := disk.Usage("/")
 	//usedMB := int(u.Used) / MB
@@ -56,7 +68,13 @@ func DiskCheck(c *gin.Context) {
 	// })
 }
 
-//CPUCheck check
+// @Summary Checks the cpu usage
+// @Description Checks the cpu usage
+// @Tags monitor
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "CRITICAL - Load average: 1.78, 1.99, 2.02 | Cores: 2"
+// @Router /monitor/cpu [get]
 func CPUCheck(c *gin.Context) {
 	cores, _ := cpu.Counts(false)
 
@@ -80,7 +98,13 @@ func CPUCheck(c *gin.Context) {
 	c.String(status, message)
 }
 
-//RAMCheck status
+// @Summary Checks the ram usage
+// @Description Checks the ram usage
+// @Tags monitor
+// @Accept  json
+// @Produce  json
+// @Success 200 {string} plain "OK - Free space: 402MB (0GB) / 8192MB (8GB) | Used: 4%"
+// @Router /monitor/ram [get]
 func RAMCheck(c *gin.Context) {
 	u, _ := mem.VirtualMemory()
 	usedMB := int(u.Used) / MB
