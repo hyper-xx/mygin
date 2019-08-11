@@ -10,16 +10,16 @@ The gin for api server basic framework
 - [x] 业务逻辑开发
 - [x] 对请求插入自己的处理逻辑
 - [x] 进行 API 身份验证
-- [ ] 进行 HTTPS 加密
-- [ ] 用 Makefile 管理 API 源码
-- [ ] 给 API 命令添加版本功能
-- [ ] 管理 API 命令
-- [ ] 生成 Swagger 在线文档
+- [x] 进行 HTTPS 加密
+- [x] 用 Makefile 管理 API 源码
+- [x] 给 API 命令添加版本功能
+- [x] 管理 API 命令
+- [x] 生成 Swagger 在线文档
 
 ## 测试
-- [ ] 单元测试
-- [ ] 性能测试（函数性能）
-- [ ] 性能分析
+- [x] 单元测试
+- [x] 性能测试（函数性能）
+- [x] 性能分析
 - [ ] API 性能测试和调优
 
 ## 部署
